@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <!-- LINKS DE REFERENCIAS PARA LAS PAGINAS -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="china.html">Chino</a></li>
+            <li><a href="arabe.html">Arabe</a></li>
+            <li><a href="corea.html">Coreano</a></li>
+            <li><a href="japon.html">Japones</a></li>
+            <li><a href="hungaria.html">Hungaro</a></li>
+            <li><a href="encuesta.html">Encuesta</a></li>
+        </ul>
+    </nav>
+    <h2 id="TituloEncuesta">Encuesta</h2>
+    <img src="https://media1.tenor.com/m/KqRdJDTdI0oAAAAC/application-wife.gif" alt="">
+    <p>Te invitamos a poner tus datos en esta mini encuesta para mandarte mas informacion respecto a los temas</p>
+    <form action="">
+        <!-- Etiqueta para poner tu nombre -->
+        <fieldset> 
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" id="nombre">
+        </fieldset>
+        <!-- Etiqueta para poner tu edad -->
+        <fieldset>
+            <label for="edad">Edad:</label>
+            <input type="number" name="edad" id="edad">
+        </fieldset>
+        <!-- Etiqueta para poner tu correo -->
+         <fieldset>
+            <label for="correo">Correo electronico:</label>
+            <input type="email" name="correo" id="correo">
+         </fieldset>
+         <!-- Etiqueta para poner la fecha actual -->
+          <fieldset>
+            <label for="fecha">Fecha:</label>
+            <input type="date" name="fecha" id="fecha">
+          </fieldset>
+          <!-- Etiqueta para poner tu numero de telefono -->
+          <fieldset>
+            <label for="telefono">Número de teléfono:</label>
+            <input type="tel" name="telefono" id="telefono">
+          </fieldset>
+          <!-- Etiqueta para seleccionar tu género -->
+          <fieldset>
+            <label for="genero">Género:</label>
+            <select name="genero" id="genero">
+                <option value="masculino">Masculino</option>
+                <option value="femenino">Femenino</option>
+                <option value="otro">Otro</option>
+            </select>
+          </fieldset>
+          <!-- Etiqueta para seleccionar tu nivel de estudios -->
+          <fieldset>
+            <label for="educacion">Nivel de estudios:</label>
+            <select name="educacion" id="educacion">
+                <option value="primaria">Primaria</option>
+                <option value="secundaria">Secundaria</option>
+                <option value="preparatoria">Preparatoria</option>
+                <option value="universidad">Universidad</option>
+                <option value="posgrado">Posgrado</option>
+            </select>
+          </fieldset>
+          <br>
+          <!-- Boton para enviar el formulario -->
+          <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
