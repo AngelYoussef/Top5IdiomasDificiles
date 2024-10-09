@@ -21,7 +21,7 @@
     </nav>
     <h2 id="TituloEncuesta">Encuesta</h2>
     <img src="https://media1.tenor.com/m/KqRdJDTdI0oAAAAC/application-wife.gif" alt="">
-    <p>Te invitamos a poner tus datos en esta mini encuesta para mandarte mas informacion respecto a los temas</p>
+    <p>Te invitamos a poner tus datos en esta mini encuesta para saber mas de ti y tus preferencias</p>
     <form action="">
         <!-- Etiqueta para poner tu nombre -->
         <fieldset> 
@@ -33,11 +33,6 @@
             <label for="edad">Edad:</label>
             <input type="number" name="edad" id="edad">
         </fieldset>
-        <!-- Etiqueta para poner tu correo -->
-         <fieldset>
-            <label for="correo">Correo electronico:</label>
-            <input type="email" name="correo" id="correo">
-         </fieldset>
          <!-- Etiqueta para poner la fecha actual -->
           <fieldset>
             <label for="fecha">Fecha:</label>
@@ -50,13 +45,17 @@
           </fieldset>
           <!-- Etiqueta para seleccionar tu género -->
           <fieldset>
-            <label for="genero">Género:</label>
-            <select name="genero" id="genero">
-                <option value="masculino">Masculino</option>
-                <option value="femenino">Femenino</option>
-                <option value="otro">Otro</option>
-            </select>
-          </fieldset>
+            <legend>Género</legend>
+            <label>
+                <input type="radio" name="genero" value="masculino"> Masculino
+            </label>
+            <label>
+                <input type="radio" name="genero" value="femenino"> Femenino
+            </label>
+            <label>
+                <input type="radio" name="genero" value="otro"> Otro
+            </label>
+        </fieldset>
           <!-- Etiqueta para seleccionar tu nivel de estudios -->
           <fieldset>
             <label for="educacion">Nivel de estudios:</label>
@@ -69,8 +68,39 @@
             </select>
           </fieldset>
           <br>
-          <!-- Boton para enviar el formulario -->
-          <button type="submit">Enviar</button>
+</head>
+<body>
+    <p id="TituloJapones">Crea una cuenta con nosotros para mandarte actualizaciones respecto a nuestra pagina</p>
+    <fieldset>
+        <legend>Información de acceso</legend>
+        <!-- Etiqueta para poner tu correo -->
+            <label for="correo">Correo electronico:</label>
+            <input type="email" name="correo" id="correo">
+        </fieldset>
+        <fieldset>
+        <!-- Etiqueta para ingresar tu contraseña -->
+        <label for="password">Contraseña:</label>
+        <input type="password" id="password" name="password">
+        </fieldset>
+
+    <fieldset>
+        <!-- Etiqueta para agregar comentarios -->
+        <legend></legend>
+        <label for="comentarios">Comentarios adicionales:</label>
+        <textarea id="comentarios" name="comentarios" rows="4" cols="50"></textarea>
+    </fieldset>
+
+    <fieldset>
+        <!-- Etiqueta para aceptar los terminos y condiciones -->
+        <legend>Términos y condiciones</legend>
+        <label>
+            <input type="checkbox" id="terminos" name="terminos" required>
+            Acepto los términos y condiciones.
+        </label>
+    </fieldset>
+
+    <!-- Boton para enviar el formulario -->
+    <button type="submit">Enviar</button>
     </form>
 </body>
 </html>
