@@ -1,3 +1,9 @@
+.mensaje-exito {
+    color: green;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
 #Titulo{
     color: fuchsia;
 }
